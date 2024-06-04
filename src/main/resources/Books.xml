@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.Books">
+        <table name="books" schema="public" catalog="pr2"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="title">
+                <column name="title" length="50"/>
+            </basic>
+            <basic name="author">
+                <column name="author" length="50"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
